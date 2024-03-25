@@ -46,3 +46,14 @@ Si vous écrivez une phrase avec un sport et un mot clé, le bot repondra à vot
 
 <p>Voici une image de notre interface graphique avec un exemple de conversation</p>
 <img src="image/screenshot1.png">
+
+<br>
+
+<h2>Evolution du projet dans le futur</h2>
+
+<p>Nous avons pensé que aprés le concour finit, nous pourrions faire une version 2 du Phrygibot en utilisant du NLP (Natural Language Processing) grace au bibliothéque à la place de mots clés</p>
+
+<br>
+<h2>License</h2>
+
+Le projet Phrygibot est sous license 
