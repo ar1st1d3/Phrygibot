@@ -45,3 +45,4 @@ Si vous écrivez une phrase avec un sport et un mot clé, le bot repondra à vot
 <h2>Gallerie</h2>
 
 <p>Voici une image de notre interface graphique avec un exemple de conversation</p>
+<img src="image/screenshot1">
