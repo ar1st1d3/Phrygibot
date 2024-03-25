@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aristide VEROVE et Celestin SPRENG">
+    <meta name="copyrigth" content="GPL v3+">
+    <link rel="icon" href="/image/image2.png">  
+    <link href="style.css" rel="stylesheet">
+
+    <title>PhrygiBot</title>
+    <style>
+    body {
+        background-image: url('image/image1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+        .container {
+            margin: auto;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 90%; 
+            height: 85vh;
+            backdrop-filter: blur(5px); 
+            background-color: rgba(169, 169, 169, 0.5);
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        
+        .chat-area {
+            height: 85%;
+            overflow-y: scroll;
+            display: flex;
+            flex-direction: column-reverse;
+            overflow: auto;
+            margin-top: auto; /* Ajustez cette propriété pour placer la chat area en bas */
+        }
+        
+        .zone-message {
+            margin-bottom: 10px;
+        }
+        
+        .user-message,
+        .bot-message {
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .user-message {
+            text-align: right;
+            background-color: #DCF8C6;
+        }
+        
+        .bot-message {
+            text-align: left;
+            background-color: #ffffff; 
+        }
+        
+        input[type="text"] {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PhrygiBot</h1>
+        </header>
+        <div class="chat-area">
+        {% for msg in messages %}
+        <div class="bot-message" id="defilant">{{msg[1]}}</div>
+        <br>
+        <div class='user-message'>{{msg[0]}}</div>
+        <br>
+        {% endfor %}
+        </div>
+        <br>
+        <form action="/message">
+    
+            <input type="text" id="zone-message" name="msg" placeholder="veuillez entrez votre question sur les JO 2024">
+            <button type="submit" id="submit-button">envoyer</button>
+        </form>
+    </div>
+</body>
+</html>
