@@ -40,3 +40,8 @@ Si vous écrivez une phrase avec un sport et un mot clé, le bot repondra à vot
 | medaille                     | medaille , recompense , victoire                                                               | renvoit le nombres de medaille de la France dans ce sport|
 | histoire                     | histoire, apparition                                                                           | renvoit l'année de l'apparition du sport au JO           |
 | epreuves                     | epreuve                                                                                        | renvoit les differentes epreuves du sport                |
+
+<br>
+<h2>Gallerie</h2>
+
+<p>Voici une image de notre interface graphique avec un exemple de conversation</p>
