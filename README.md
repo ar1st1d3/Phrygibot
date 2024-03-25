@@ -24,5 +24,5 @@ pip install markupsafe
 <h2>Lancement</h2>
 
 <p>
-  Pour pouvoir lancer Phrygibot, il suffit d'executer le fichier dynserveur.py . Puis d'aller sur l'addresse local : localhost:8000 pour pouvoir arriver sur la page du Phrygibot 
+  Pour pouvoir lancer Phrygibot, il suffit d'executer le fichier dynserveur.py . Puis d'aller sur l'addresse local : <a href="localhost:8000">localhost:8000</a> pour pouvoir arriver sur la page du Phrygibot 
 </p>
