@@ -316,13 +316,13 @@ def creation_phrases(mot_clé) :
                     date = dates[0].split('/')
                     jour = date[0]
                     moi = mois[int(date[-1]) - 1]
-                    phrase = phrase + f' Les épreuves commenceront le {jour} {moi}.'
+                    phrase = phrase + f' Les épreuves commenceront le {jour} {moi} 2024.'
                 elif mot == 'fin' : 
                     dates = data[key]['date']
                     date = dates[1].split('/')
                     jour = date[0]
                     moi = mois[int(date[-1]) - 1]
-                    phrase = phrase + f' Les épreuves se finiront le {jour} {moi}.'
+                    phrase = phrase + f' Les épreuves se finiront le {jour} {moi} 2024.'
                 elif mot == 'lieux' :
                     lieux = data[key]['lieux'] 
                     if  type(lieux) is list:
