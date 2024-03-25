@@ -10,7 +10,7 @@ from urllib.parse import urlparse, parse_qs
 from os import curdir, chdir
 
 # Le numéro de port du serveur. Son URL est donc http://localhost:8000/
-PORT = 7986
+PORT = 8000
 
 # Se mettre dans le dossier "www". Les chemins des URLs sont donc relatives à ce dossier
 # chdir("www")
