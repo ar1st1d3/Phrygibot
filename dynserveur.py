@@ -8,11 +8,8 @@ def nouveau_message(url, vars):
 	# récuperer le texte du message envoyé par le navigateur
 	message = vars['msg']
 	# l'insérer au début de la conversation
-	print(message)
 	reponse = gestion_demande(message)
-	print(reponse)
 	conversation.insert(0,[message, reponse])
-	print(conversation)
 	# renvoyer la page conversation.html, ce qui aura pour effet
 	# d'appeler `page_conversation` pour afficher la nouvelle liste de messages
 	return Redirect('/home.html')
