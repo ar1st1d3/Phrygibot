@@ -152,14 +152,13 @@ def search_mot_clé(text) :
                     if mot == 'beach' : 
                         j += 5
                 #DETECTION DES SPORTS COMPOSES
-                elif mot in liste_sport_composé :
-                    print(7)
+                elif mot in liste_sport_composé :
                     not_trouve = True
                     sport = liste_sport_composé[mot]
                     k = init_k(taille, j , sport['zone'])
                     for l in range(len(sport['sport']) - 1 ) : 
                         letters = sport['letter'][l]
-                        print(letters)
+                        
                         if len(letters) == 1 : 
                             if letters[0] in phrase[j:k+1] : 
                                 mot_clé_phrase.append(sport['sport'][l+1])
