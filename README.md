@@ -56,4 +56,4 @@ Si vous écrivez une phrase avec un sport et un mot clé, le bot repondra à vot
 <br>
 <h2>License</h2>
 
-Le projet Phrygibot est sous license 
+Le projet Phrygibot est sous license libre GPL v3+
