@@ -1,5 +1,23 @@
 from data import data
 
+'''
+    Ce programme est le fichier python qui permet de generer une reponse à votre demande sur les JO 2024
+    Copyright (C) 2024  Verove
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+'''
 
 i = 0
 #LISTE DES SPORTS ET DES SPORTS COMPOSEES
@@ -152,7 +170,8 @@ def search_mot_clé(text) :
                     if mot == 'beach' : 
                         j += 5
                 #DETECTION DES SPORTS COMPOSES
-                elif mot in liste_sport_composé :
+                elif mot in liste_sport_composé :
+
                     not_trouve = True
                     sport = liste_sport_composé[mot]
                     k = init_k(taille, j , sport['zone'])
