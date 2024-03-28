@@ -1,3 +1,5 @@
+#Ce fichier provient du manuel de NSI 1er des éditions Hachette
+
 from serveur import get_template, render, OK, Redirect, pageDynamique, lancerServeur
 from gestion_demande import gestion_demande
 # Les messages de la conversation
