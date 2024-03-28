@@ -1,3 +1,5 @@
+#Ce fichier provient du manuel de NSI 1er des éditions Hachette
+
 # -*- coding: utf8 -*-
 #
 #	Serveur Web permettant de gérer des pages dynamiques
