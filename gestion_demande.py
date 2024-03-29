@@ -348,7 +348,7 @@ def creation_phrases(mot_clé) :
                     phrase = phrase + f' Les epreuves se tiendront {lieux}.'
                 elif mot == 'medaille' : 
                     medaille  = data[key]['nb_medailles']       
-                    phrase  = phrase + f"La France a gagné {medaille[0]} dans ce sport dont "
+                    phrase  = phrase + f"La France a gagné {medaille[0]} medaille(s) dans ce sport dont "
                     if medaille[1] != 0 :
                         phrase = phrase +str( medaille[1]) + " medaille(s) d'or "
                     if medaille[2] != 0 :
@@ -360,13 +360,16 @@ def creation_phrases(mot_clé) :
                             phrase += "et "
                         phrase = phrase + str(medaille[3]) + " medaille(s) de bronze "
                     phrase = phrase + '.'
-                elif mot == 'epreuves' : 
-                    epreuve = data[key][mot]
-                    if  len(epreuve) > 1:
-                        epreuve = ', '.join(epreuve)
-                        phrase = phrase + f'les epreuves de ce sport sont {epreuve}'
-                    else :
-                        phrase = phrase + f'la seule épreuve de ce sport est {epreuve[0]}'
+                elif mot == 'epreuves' :
+                    if 'epreuves'in data[key] :
+                        epreuve = data[key][mot]
+                        if  len(epreuve) > 1:
+                            epreuve = ', '.join(epreuve)
+                            phrase = phrase + f'les epreuves de ce sport sont {epreuve}'
+                        else :
+                            phrase = phrase + f'la seule épreuve de ce sport est {epreuve[0]}'
+                     else :
+                        phrase = phrase + 'Ce sport ne continent qu'une seule epreuve.'
             phrase= phrase + ''
         text += phrase
     if text == '' : 
